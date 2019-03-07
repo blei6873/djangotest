@@ -13,3 +13,6 @@ spring:
     password: guest      
 env:
   dev4
+girl:
+  name: xh
+  age: 26 
