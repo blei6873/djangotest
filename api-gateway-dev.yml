@@ -1,0 +1,23 @@
+zuul:
+  routes:
+#    product: /newProudct/**
+    #简洁写法如上
+    #/myProudct/product/list -> /product/product/list
+#    sensitiveHeaders: 为设置为不过滤掉cookie
+    myProudct:
+      path: /myProudct/**
+      serviceId: product
+      sensitiveHeaders:
+
+#  排除某些路由，正则表达式set
+  ignored-patterns:
+#    方式一
+#    - /product/product/listForOrder
+#    - /newProudct/product/listForOrder
+#    方式二
+    - /**/product/listForOrder
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
