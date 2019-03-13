@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: zabbix
+    url: jdbc:mysql://10.10.148.9:3306/sell?characterEncoding=utf-8&useSSL=false
+  redis:
+    host: 10.10.148.9
+    port: 6379
+env:
+  dev
