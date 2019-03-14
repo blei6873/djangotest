@@ -18,6 +18,10 @@ zuul:
 #    - /newProudct/product/listForOrder
 #    方式二
     - /**/product/listForOrder
+spring:
+  redis:
+    host: 10.10.148.9
+    port: 6379
 management:
   endpoints:
     web:
